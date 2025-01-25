@@ -6,7 +6,7 @@
 /*   By: chakaish <chakaish@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/25 11:52:43 by chakaish          #+#    #+#             */
-/*   Updated: 2024/12/25 19:34:59 by chakaish         ###   ########.fr       */
+/*   Updated: 2025/01/24 16:26:19 by chakaish         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,18 +18,20 @@ int	ft_printf(const char *input, ...)
 	va_list		args;
 	int			num;
 
+	if (!input)
+		return (-1);
 	num = 0;
 	save = ft_strdup(input);
 	if (!save)
 		return (0);
 	va_start(args, input);
-	num = ft_count_out(save, args);
+	num = ft_count_output(save, args);
 	va_end(args);
 	free((char *)save);
 	return (num);
 }
 
-int	ft_count_out(const char *save, va_list args)
+int	ft_count_output(const char *save, va_list args)
 {
 	size_t	i;
 	size_t	c;

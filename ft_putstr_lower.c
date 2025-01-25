@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putstr_lower.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chakaish <chakaish@student.42tokyo.jp      +#+  +:+       +#+        */
+/*   By: chakaish <chakaish@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/25 15:54:52 by chakaish          #+#    #+#             */
-/*   Updated: 2024/12/25 16:01:27 by chakaish         ###   ########.fr       */
+/*   Updated: 2025/01/16 15:56:05 by chakaish         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,11 +14,11 @@
 
 int	ft_putstr_count(char *c)
 {
-	int n;
+	int	n;
 
 	if (!c)
 		return (0);
-	n =ft_strlen(c);
+	n = ft_strlen(c);
 	ft_putstr_fd(c, 1);
 	return (n);
 }

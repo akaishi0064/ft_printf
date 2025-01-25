@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_base.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chakaish <chakaish@student.42tokyo.jp      +#+  +:+       +#+        */
+/*   By: chakaish <chakaish@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/25 15:33:09 by chakaish          #+#    #+#             */
-/*   Updated: 2024/12/25 15:51:48 by chakaish         ###   ########.fr       */
+/*   Updated: 2025/01/16 15:55:14 by chakaish         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-static char *ft_change(unsigned long long us, int a, char *str, int c)
+static char	*ft_change(unsigned long long us, int a, char *str, int c)
 {
 	while (us != 0)
 	{
@@ -28,9 +28,9 @@ static char *ft_change(unsigned long long us, int a, char *str, int c)
 
 char	*ft_base(unsigned long long point, int base)
 {
-	char		*str;
-	unsigned long long us;
-	int			count;
+	char				*str;
+	unsigned long long	us;
+	int					count;
 
 	count = 0;
 	us = point;

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_case_char_int.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: chakaish <chakaish@student.42tokyo.jp      +#+  +:+       +#+        */
+/*   By: chakaish <chakaish@student.42tokyo.jp>     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/25 15:18:02 by chakaish          #+#    #+#             */
-/*   Updated: 2024/12/25 15:30:09 by chakaish         ###   ########.fr       */
+/*   Updated: 2025/01/16 15:55:36 by chakaish         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@ int	ft_case_char(char c)
 
 int	ft_case_int(int i)
 {
-	char 	*str;
+	char	*str;
 	int		n;
 
 	str = ft_itoa(i);
@@ -28,4 +28,3 @@ int	ft_case_int(int i)
 	free(str);
 	return (n);
 }
-

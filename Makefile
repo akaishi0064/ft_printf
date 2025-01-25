@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: chakaish <chakaish@student.42tokyo.jp      +#+  +:+       +#+         #
+#    By: chakaish <chakaish@student.42tokyo.jp>     +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/12/25 16:25:55 by chakaish          #+#    #+#              #
-#    Updated: 2024/12/25 16:58:07 by chakaish         ###   ########.fr        #
+#    Updated: 2025/01/24 12:20:34 by chakaish         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -41,7 +41,7 @@ clean:
 	${MAKE} clean -C ./libft
 	${RM} ${OBJS}
 fclean: clean
-	${MANE} fclean -C ./libft
+	${MAKE} fclean -C ./libft
 	${RM} ${NAME}
 
 re:		fclean all
